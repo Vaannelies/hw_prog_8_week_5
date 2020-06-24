@@ -1,3 +1,4 @@
+///<reference path="messageboard.ts" />
 class Captain extends HTMLElement{
     
     private ship : Ship

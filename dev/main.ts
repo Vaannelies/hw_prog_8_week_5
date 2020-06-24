@@ -1,13 +1,17 @@
+/// <reference path="messageboard.ts"/>
 class Main {
 
     private ships : PirateShip[] = []
+    private messageboard : Messageboard
 
     constructor() {
         for (let i = 0; i < 10; i++) {
             this.ships.push(new PirateShip())
         }
-
+   
         // Eventueel Messageboard aanmaken zodat deze zichtbaar wordt?
+        this.messageboard = Messageboard.getInstance()
+        console.log(this.messageboard)
 
         this.gameLoop()
     }
